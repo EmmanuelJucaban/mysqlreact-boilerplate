@@ -7,11 +7,11 @@ const apiRoutes = require('./apiRoutes');
 
 
 
-router.get('/', (req, res) => {
-    if(process.env.NODE_ENV === "production") {
-        res.sendFile(path.join(__dirname, "build", "index.html"));
-    }
-});
+// router.get('/', (req, res) => {
+//     if(process.env.NODE_ENV === "production") {
+//         res.sendFile(path.join(__dirname, "build", "index.html"));
+//     }
+// });
 
 // /something was prepended to every route inside of here
 // Prepend /api to all of the routes declared inside of apiRoutes
