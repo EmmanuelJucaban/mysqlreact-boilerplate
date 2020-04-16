@@ -1,7 +1,5 @@
 const mysql = require('mysql');
-
 let connection;
-
 if(process.env.JAWSDB_URL) {
     connection = connection.createConnection(process.env.JAWSDB_URL);
 } else {
@@ -13,5 +11,4 @@ if(process.env.JAWSDB_URL) {
         database: 'app_db'
     });
 }
-
 module.exports = connection;
